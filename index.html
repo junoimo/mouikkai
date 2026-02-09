@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>高知県 旅行プラン作成</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- GitHub Pages対応：同階層にstyle.css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌊 高知県 旅行プラン作成</h1>
+    <p>やりたいこととエリアを選んで、モデルコースを作ろう</p>
+  </header>
+
+  <main class="container">
+    <section class="select-area">
+      <h2>やりたいこと（テーマ）</h2>
+      <label><input type="checkbox" name="theme" value="nature"> 自然</label>
+      <label><input type="checkbox" name="theme" value="gourmet"> グルメ</label>
+      <label><input type="checkbox" name="theme" value="history"> 歴史</label>
+      <label><input type="checkbox" name="theme" value="activity"> アクティビティ</label>
+      <label><input type="checkbox" name="theme" value="onsen"> 温泉</label>
+
+      <h2>観光エリア</h2>
+      <label><input type="checkbox" name="area" value="kochi"> 高知市</label>
+      <label><input type="checkbox" name="area" value="nanbu"> 南国・室戸</label>
+      <label><input type="checkbox" name="area" value="seibu"> 西部・四万十</label>
+      <label><input type="checkbox" name="area" value="tobu"> 東部・足摺</label>
+      <label><input type="checkbox" name="area" value="chubu"> 中部・須崎</label>
+
+      <button id="createPlan">プランを作成</button>
+
+      <h2>おすすめプラン</h2>
+      <ul id="planResult"></ul>
+    </section>
+
+    <section class="map-area">
+      <h2>マップ</h2>
+      <iframe
+        id="map"
+        src="https://www.google.com/maps?q=高知県&output=embed"
+        loading="lazy">
+      </iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Kochi Travel Planner</p>
+  </footer>
+
+  <!-- GitHub Pages対応：同階層にscript.js -->
+  <script src="script.js"></script>
+</body>
+</html>
